@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+
+.svg1,
+.svg2,
+.svg3,
+.svg4,
+.svg5 {
+    margin-bottom: 20px;
+}
+
+.svg1 svg {
+    background-color: #E30A17;
+}
+
+.svg1 polygon {
+    fill: #ffff;
+    transform: scale(0.7, 0.7) translate(74%, 50%) rotate(345deg);
+}
+
+
+.svg2 svg rect:nth-child(1) {
+    fill: red;
+}
+
+.svg2 svg rect:nth-child(2) {
+    fill: white;
+    y: 70px;
+
+}
+
+.svg2 svg rect:nth-child(3) {
+    fill: blue;
+    y: 140px;
+}
+
+
+.svg3 svg {
+    background-color: red;
+}
+
+
+.svg3 svg rect:nth-child(1) {
+    fill: mediumblue;
+}
+
+.svg3 svg rect:nth-child(6) {
+    fill: green;
+    y: 140px;
+}
+
+.svg3 .ster1 {
+    transform: scale(0.7, 0.7) translate(67%, 60%) rotate(345deg);
+    fill: #ffff;
+}
+
+.svg3 .ster2 {
+    transform: scale(0.7, 0.7) translate(71%, 53%) rotate(17deg);
+    fill: #ffff;
+}
+
+.svg4 svg {
+    background-color: #ffff;
+}
+
+.svg4 circle {
+    fill: #E30A17;
+}
+
+
+.svg5 svg {
+    background-color: blue;
+}
+
+.svg5 svg rect:nth-child(1) {
+    width: 100%;
+    height: 40px;
+    fill: yellow;
+    y: 85px;
+}
+
+.svg5 svg rect:nth-child(2) {
+    height: 100%;
+    width: 40px;
+    fill: yellow;
+    x: 100px;
+}
+
+
+.svg6 svg {
+    background-color: red;
+}
+
+.svg6 svg rect:nth-child(1) {
+    width: 50%;
+    height: 50px;
+    fill: #ffff;
+    y: 80px;
+    x: 25%;
+}
+
+.svg6 svg rect:nth-child(2) {
+    height: 73%;
+    width: 56px;
+    fill: #ffff;
+    x: 43%;
+    y: 13%;
+}

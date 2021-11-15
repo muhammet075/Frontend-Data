@@ -1,0 +1,45 @@
+<article>
+  <section>
+    <%for (let i = 0; i < nieuwData.length; i++) {%>
+    <ul>
+      <li><%= nieuwData[i].base_asset %></li>
+      <li><%= nieuwData[i].price %></li>
+    </ul>
+    <%}%>
+  </section>
+
+  <section>
+    <svg width="1000" height="2500">
+      <g id="wrapper" transform="translate(40, 20)"></g>
+    </svg>
+  </section>
+</article>
+
+<script>
+
+  let cryptoData = [
+      <%for (let i = 0; i < nieuwData.length; i++) {%>{
+        naam: "<%= nieuwData[i].base_asset %>",
+        prijs: <%= nieuwData[i].price %>
+      },
+      <%}%>
+    ];
+
+    var bandScale = d3
+      .scaleBand()
+      .domain([<%for (let i = 0; i < nieuwData.length; i++) {%>"<%= nieuwData[i].base_asset %>",<%}%>])
+      .range([0, 700])
+      .paddingInner(0.3);
+
+    d3.select("#wrapper")
+      .selectAll("rect")
+      .data(cryptoData)
+      .join("rect")
+      .attr("y", function (d) {
+        return bandScale(d.naam);
+      })
+      .attr("height", bandScale.bandwidth())
+      .attr("width", function (d) {
+        return d.prijs;
+      });
+</script>

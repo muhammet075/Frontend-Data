@@ -2,7 +2,7 @@
 Welkom bij mijn repo voor het vak Frontend Data!
 
 Bij dit vak hebben we met SVG's geoefend en we hebben met D3 geoefend. Lees de <a href="https://github.com/muhammet075/Frontend-Data/wiki">Wiki</a> voor meer informatie over dit vak.
-<br/>
+<br/><br/>
 
 ## Dependencies
 * NodeJS
